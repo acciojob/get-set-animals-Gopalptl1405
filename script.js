@@ -1,5 +1,6 @@
 //complete this code
 class Animal {
+	species;
 	constructor(species){
 		this.species = species;
 	}
@@ -7,7 +8,7 @@ class Animal {
 		return this.species;
 	}
 	makeSound(){
-		onsole.log(`The ${this.species} makes a sound`);
+		console.log(`The ${this.species} makes a sound`);
 	}
 }
 
@@ -26,5 +27,4 @@ class Dog extends Animal {
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
-Dog.bark();
 window.Cat = Cat;
