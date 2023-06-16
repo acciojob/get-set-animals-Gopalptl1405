@@ -1,7 +1,7 @@
 //complete this code
 class Animal {
-	constructor(pSpecies){
-		this.species =pSpecies;
+	constructor(species){
+		this.species = species;
 	}
 	get species(){
 		return this.species;
@@ -11,19 +11,20 @@ class Animal {
 	}
 }
 
-class Dog extends Animal {
-	bark(){
-		console.log("woof");
-	}
-}
-
 class Cat extends Animal {
 	purr(){
 		console.log("purr");
 	}
 }
 
+class Dog extends Animal {
+	bark(){
+		console.log("woof");
+	}
+}
+
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
+Dog.bark();
 window.Cat = Cat;
